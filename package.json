@@ -9,7 +9,9 @@
     "build:dev": "webpack --mode development",
     "build:prod": "webpack --mode production",
     "watch": "babel src/app.js --out-file=public/scripts/app.js --presets=@babel/preset-react,@babel/preset-env --watch",
-    "dev-server": "webpack serve --mode development"
+    "dev-server": "webpack serve --mode development",
+    "start": "node server/server.js",
+    "heroku-postbuild": "npm run build:prod"
   },
   "author": "",
   "license": "ISC",
