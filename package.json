@@ -16,7 +16,11 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "jest": "^27.0.6"
+    "jest": "^27.0.6",
+    "enzyme": "^3.11.0",
+    "enzyme-to-json": "^3.6.2",
+    "react-test-renderer": "^17.0.2",
+    "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
     "@babel/cli": "^7.13.14",
@@ -28,8 +32,6 @@
     "@wojtekmaj/enzyme-adapter-react-17": "^0.6.3",
     "babel-loader": "^8.2.2",
     "css-loader": "^5.2.3",
-    "enzyme": "^3.11.0",
-    "enzyme-to-json": "^3.6.2",
     "mini-css-extract-plugin": "^2.1.0",
     "moment": "^2.29.1",
     "node-sass": "^5.0.0",
@@ -42,14 +44,12 @@
     "react-modal": "^3.12.1",
     "react-redux": "^7.2.4",
     "react-router-dom": "^5.2.0",
-    "react-test-renderer": "^17.0.2",
     "redux": "^4.1.0",
     "sass-loader": "^11.0.1",
     "style-loader": "^2.0.0",
     "uuid": "^8.3.2",
     "validator": "^13.5.2",
     "webpack": "^5.31.2",
-    "webpack-cli": "^4.6.0",
-    "webpack-dev-server": "^3.11.2"
+    "webpack-cli": "^4.6.0"
   }
 }
