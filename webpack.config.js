@@ -12,7 +12,6 @@ if (process.env.NODE_ENV === 'test') {
 
 module.exports = (env, argv) => {
     const isProduction = argv.mode === 'production'
-    console.log("env", env, argv)
     return {
         entry: './src/app.js',
             output: {
