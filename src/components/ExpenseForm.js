@@ -57,10 +57,10 @@ export default class ExpenseForm extends React.Component {
   }
   render() {
     return (
-      <div>
-        {this.state.error && <div>{this.state.error}</div>}
-        <form onSubmit={this.onSubmit}>
+        <form className="form" onSubmit={this.onSubmit}>
+          {this.state.error && <div className="form__error">{this.state.error}</div>}
           <input 
+            className="text-input"
             type="text" 
             name="" 
             placeholder="Description"
@@ -69,6 +69,7 @@ export default class ExpenseForm extends React.Component {
             onChange={this.onDescriptionChange}
           />
           <input 
+            className="text-input"
             type="text"
             value={this.state.amount}
             placeholder="Amount"
@@ -82,16 +83,19 @@ export default class ExpenseForm extends React.Component {
             id="date-picker" // PropTypes.string.isRequired,
             numberOfMonths={1}
             isOutsideRange={(day) => false}
+            block
           />
           <textarea
+            className="textarea"
             placeholder="Add a note for your expense (optional)"
             value={this.state.note}
             onChange={this.onNoteChange}
           >
           </textarea>
-          <button>Add Expense</button>
+          <div>
+            <button className="button">Save Expense</button>  
+          </div>
         </form>
-      </div>
     )
   }
 }
