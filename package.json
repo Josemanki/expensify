@@ -39,7 +39,7 @@
     "history": "^4.10.1",
     "mini-css-extract-plugin": "^2.1.0",
     "moment": "^2.29.1",
-    "node-sass": "^5.0.0",
+    "node-sass": "^7.0.1",
     "normalize.css": "^8.0.1",
     "numeral": "^2.0.6",
     "process": "^0.11.10",
